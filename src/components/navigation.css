@@ -1,0 +1,92 @@
+:root {
+    --sm-font-weight: 100;
+    --md-font-weight: 400;
+    --bd-font-weight: 900;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    position: absolute;
+    left: -9000px;
+    transition: ease-in-out 0.5s;
+
+}
+
+.mobile-nav-active {
+    width: 100%;
+    height: 100%;
+    background: purple;
+    position: absolute;
+    left: 0;
+    transition: ease-in 0.5s;
+}
+
+.fa-xmark {
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.navigationSection {
+    padding: 2em 3em;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+.main-links, .nav-socials {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.main-links {
+    font-size: 1.2rem;
+}
+
+.fa-instagram, .fa-facebook, .fa-twitter {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.order-btn {
+    border: none;
+    padding: 1em;
+    border-radius: 0.3em 1em;
+    background-color: crimson;
+    font-size: 1rem;
+    font-weight:var(--bd-font-weight);
+    box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .nav-socials, .nav-left {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+}
